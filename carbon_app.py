@@ -10,7 +10,7 @@ st.set_page_config(page_title="ICADS | GenAI Carbon Manager", layout="wide")
 
 # --- 🔑 API KEY SETUP (HARDCODED) ---
 # PASTE YOUR KEY INSIDE THE QUOTES BELOW
-GEMINI_API_KEY = st.secrets["gemini API Key"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # Configure the AI immediately
 try:
@@ -204,4 +204,5 @@ with col_b:
                 except Exception as e:
 
                     st.error(f"Error connecting to Gemini: {e}")
+
 
